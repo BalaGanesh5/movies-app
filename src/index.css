@@ -8,6 +8,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+ 
+body::-webkit-scrollbar-thumb {
+  border: 3px solid #200101;
+  border-radius: 90px;
+  border-style: dotted;
+  height: 10px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

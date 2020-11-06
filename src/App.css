@@ -1,13 +1,22 @@
 
-header{
+
+.header{
   position: fixed;
   width: 100%;
   z-index: 1;
   top: 0;
   display: flex;
-  background-image: linear-gradient(to left, #23074d,#cf380e);
+  background: transparent;
   justify-content: flex-end;
+  
 }
+
+.header.active{
+  z-index: 1;
+  background-image: linear-gradient(to left, #23074d,#cf380e);
+  transition: all 3000ms ease-in-out;
+}
+
 
 input{
   margin: 20px;
@@ -28,5 +37,6 @@ input{
   justify-content: space-around;
   flex-wrap: wrap;
   padding-top:70px ;
+  scroll-behavior: smooth;
   
 }
